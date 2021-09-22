@@ -14,13 +14,12 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi I'm Audrey. I'm a web developer, baker, crafter, and gamer. I love learning new skills and leveling up!</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        <p className="typed">
+          This is a sample website built in <a target="_blank" href="https://nextjs.org/">Next.js</a>, and deployed using <a target="_blank" href="https://vercel.com/">Vercel</a>.
         </p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={`${utilStyles.headingLg}`}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -35,7 +34,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   )
 }

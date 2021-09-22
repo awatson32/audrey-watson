@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Audrey Watson'
-export const siteTitle = 'About Me'
+export const siteTitle = 'Audrey'
 
 export default function Layout({ children, home }) {
   return (
@@ -24,6 +24,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        
       </Head>
       <header className={styles.header}>
         {home ? (
